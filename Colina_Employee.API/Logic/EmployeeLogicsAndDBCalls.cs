@@ -1,4 +1,4 @@
-﻿using Colina_Employee.API.DataAccess;
+using Colina_Employee.API.DataAccess;
 using Colina_Employee.API.DTO;
 using Colina_Employee.API.Model;
 using Microsoft.EntityFrameworkCore;
@@ -102,19 +102,8 @@ using Microsoft.EntityFrameworkCore;
             };
         }
 
-        // Mapping to UpdatingEmployeeDto
-        private static UpdatingEmployeeDto ToUpdatingEmployeeDtoStatic(Employee employee)
-        {
-            return new UpdatingEmployeeDto
-            {
-                Name = employee.Name,
-                Email = employee.Email,
-                Position = employee.Position,
-                Salary = employee.Salary,
-                SSSNumber = employee.SSSNumber,
-                PagibigNumber = employee.PagibigNumber
-            };
-        }
+      
+        
 
     }
 }
