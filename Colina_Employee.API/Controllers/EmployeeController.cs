@@ -1,4 +1,4 @@
-﻿using Colina_Employee.API.DataAccess;
+using Colina_Employee.API.DataAccess;
 using Colina_Employee.API.DTO;
 using Colina_Employee.API.Logic;
 using Microsoft.AspNetCore.Mvc;
@@ -49,7 +49,6 @@ namespace Colina_Employee.API.Controllers
                 var employee = await employeeService.AddEmployeeAsync(employeeDto);
             return CreatedAtAction(nameof(GetEmployeeById), new { id = employee.Id }, employee);
         }
-
 
         //Updating the details of a specific employee
         [HttpPut("{id}")]
